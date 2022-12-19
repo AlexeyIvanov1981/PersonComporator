@@ -9,6 +9,7 @@ public class Main {
         person.add(new Person("Senya", "Lom", 50));
         person.add(new Person("Grisha", "Git Kit Mit", 15));
         person.add(new Person("Sasha", "Luk", 17));
+        person.add(new Person("Pasha", "Git Kit Mit Fit", 99));
 
         Collections.sort(person, new PersonComporator());
 
