@@ -15,7 +15,7 @@ public class Main {
 
 
         person.removeIf(person1 -> {
-            if(person1.getAge() <= 18) return true;
+            if(person1.getAge() < 18) return true;
             return false;
         });
 
