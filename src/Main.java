@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,7 +13,11 @@ public class Main {
         person.add(new Person("Sasha", "Luk", 17));
         person.add(new Person("Pasha", "Git Kit Mit Fit", 99));
 
-        Collections.sort(person, new PersonComparator());
+
+        person.removeIf(person1 -> {
+            if(person1.getAge() <= 18) return true;
+            return false;
+        });
 
         System.out.println(person);
     }
