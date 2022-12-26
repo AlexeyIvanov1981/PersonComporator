@@ -14,7 +14,7 @@ public class Main {
         person.add(new Person("Pasha", "Git Kit Mit Fit", 99));
 
 
-        person.removeIf(person1 -> {return person1.getAge() < 18;});
+        person.removeIf(person1 -> person1.getAge() < 18);
 
         System.out.println(person);
     }
